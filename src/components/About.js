@@ -41,11 +41,13 @@ const About = () => {
               <li>Redux</li>
               <li>HTML/CSS</li>
               <li>SCSS</li>
-              <li>Tailwind</li>
-              <li>Bootstrap</li>
             </ul>
             <ul>
               <li>Node JS</li>
+              <li>GIT</li>
+              <li>MongoDB</li>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
         </div>
