@@ -29,7 +29,7 @@ const About = () => {
           <h4 className="heading-secondary">TOP EXPERTISE</h4>
           <p>Desarrollador Front End con principal enfoque en React + Redux:</p>
           <a
-            href="https://drive.google.com/uc?export=download&id=1cOPXjMH2lZd8FjrBom26saLI5_WhIgg2"
+            href="https://drive.google.com/uc?export=download&id=1GntmmRwlEEbC-DlVMEKq6g9jUZ9S7kiq"
             download
           >
             Descargar CV
