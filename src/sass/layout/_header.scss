@@ -1,0 +1,143 @@
+.header {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--secondaryColor);
+  align-items: center;
+  padding: 18rem 5rem;
+
+  @include respond(tab-port) {
+    padding: 6rem 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 3rem;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__left-column {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-content: center;
+  }
+  &__right-column {
+    display: grid;
+    grid-area: right-column;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__preview-content {
+    width: 30rem;
+    padding: 1.5rem;
+    background-color: var(--previewBg);
+    border: 1.5px solid #17a2b8;
+    position: relative;
+
+    @include respond(phone) {
+      height: auto;
+      width: auto;
+    }
+  }
+
+  &__preview {
+    height: 18rem;
+    max-width: 30rem;
+    background-color: var(--previewShadow);
+    padding-left: 3rem;
+    padding-top: 3rem;
+    font-size: 1.4rem;
+
+    @include respond(tab-port) {
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      height: auto;
+    }
+  }
+  &__profile-shape {
+    overflow: hidden;
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__profile-shape:hover &__profile-img {
+    // transform: scale(1);
+    transform: scale(1.4);
+    filter: blur(3px) brightness(80%);
+  }
+
+  &__profile-img {
+    height: 100%;
+    // margin: 0 auto;
+    object-fit: cover;
+    border: 0.2rem solid $color-black;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  &__profile-shape:hover &__profile-caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &__profile-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  [class^="header__preview-corner"] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  &__preview-corner--tl {
+    top: -0.5rem;
+    left: -0.5rem;
+  }
+  &__preview-corner--tr {
+    top: -0.5rem;
+    right: -0.5rem;
+  }
+  &__preview-corner--bl {
+    bottom: -0.5rem;
+    right: -0.5rem;
+  }
+  &__preview-corner--br {
+    bottom: -0.5rem;
+    left: -0.5rem;
+  }
+}
