@@ -1,21 +1,12 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
-import Lottie from "react-lottie";
+import { Lottie } from "@crello/react-lottie";
 import programmer from "../lotties/8306-programming-animation.json";
 
 const About = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   });
-
-  const programmerOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: programmer,
-    // rendererSettings: {
-    //   preserveAspectRatio: "xMidYMid slice",
-    // },
-  };
 
   return (
     <section className="section-about" data-aos="fade-up">
@@ -57,7 +48,7 @@ const About = () => {
           </div>
         </div>
         <div className="col-1-of-2">
-          <Lottie options={programmerOptions} isClickToPauseDisabled={true} />
+          <Lottie config={{ animationData: programmer }} />
 
           {/* <h3 className="heading-secondary">
             Encuéntrame en Facebook y Twitter
