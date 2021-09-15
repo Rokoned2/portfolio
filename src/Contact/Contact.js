@@ -40,7 +40,7 @@ const Contact = () => {
               type="text"
               className="form__input"
               placeholder="Nombre completo"
-              required=""
+              required
             />
             <label htmlFor="name" className="form__label">
               Nombre completo
@@ -53,7 +53,7 @@ const Contact = () => {
               type="text"
               className="form__input"
               placeholder="Asunto"
-              required=""
+              required
             />
             <label htmlFor="subject" className="form__label">
               Asunto
@@ -66,7 +66,7 @@ const Contact = () => {
               type="email"
               className="form__input"
               placeholder="Email address"
-              required=""
+              required
             />
             <label htmlFor="email" className="form__label">
               Email address
@@ -79,7 +79,7 @@ const Contact = () => {
               type="text"
               className="form__input"
               placeholder="Mensaje"
-              required=""
+              required
             />
             <label htmlFor="email" className="form__label">
               Mensaje
