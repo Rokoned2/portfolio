@@ -22,7 +22,7 @@ const Projects = () => {
             .slice(start + step, end + step)
             .map(({ img, title, intro, link, id }) => {
               return (
-                <div className="col-1-of-3">
+                <div className="col-1-of-3" key={id}>
                   <Post
                     img={img}
                     title={title}
