@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BiWindows } from "react-icons/bi";
+// import { BiWindows } from "react-icons/bi";
 
 const ThemeOptions = () => {
   const root = document.querySelector(":root");
@@ -42,7 +42,8 @@ const ThemeOptions = () => {
           onClick={() => handleChange("purple")}
           className="navbar__theme-option navbar__theme-option--purple"
         >
-          <BiWindows />
+          &#10066;
+          {/* <BiWindows /> */}
         </div>
         <div onClick={handleChange} className="navbar__theme-option">
           x
