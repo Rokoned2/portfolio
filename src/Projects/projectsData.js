@@ -1,6 +1,7 @@
 import hitel from "../images/hitel.png";
 import exterior from "../images/exterior.png";
 import reactReduxAuth from "../images/react-redux-auth.png";
+import ciclosunidos from "../images/ciclosunidos-screenshot.png";
 
 const data = [
   {
@@ -27,11 +28,11 @@ const data = [
   },
   {
     id: 3,
-    img: hitel,
-    title: "Hitel",
+    img: ciclosunidos,
+    title: "Ciclos Unidos",
     intro:
-      "Diseñado y construido para servir de homepage en página de calificaciones de hoteles.",
-    link: "https://naughty-albattani-442cb9.netlify.app/",
+      "Frontend de página de servicios universitarios usando FirebaseAuth, ReactJS, Tailwind.",
+    link: "https://ciclosunidos.netlify.app/",
   },
   {
     id: 4,
